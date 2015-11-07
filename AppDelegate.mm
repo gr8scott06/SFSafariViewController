@@ -41,7 +41,7 @@
 }
 
 -(void)clientLaunch:(NSString*)authToken {
-    NSString *url = [NSString stringWithFormat:@"http://localhost:3000/ios_native_authentication?auth=%@", authToken];
+    NSString *url = [NSString stringWithFormat:@"http://localhost:3000/ios_authentication?auth=%@", authToken];
     NSURL *baseURL = [NSURL URLWithString:url];
     [[UIApplication sharedApplication] openURL:baseURL];
 }
